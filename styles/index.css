@@ -151,14 +151,14 @@ svg * {
   }
 }
 @font-face {
-  font-family: "AvertaStd";
+  font-family: "Averta Std";
   src: url("../fonts/AvertaStd-Bold.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "AvertaStd";
+  font-family: "Averta Std";
   src: url("../fonts/AvertaStd-Semibold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -184,6 +184,25 @@ svg * {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+:root {
+  --primary-light: #82e6ab;
+  --primary: #2ed573;
+  --primary-dark: #25aa5c;
+  --greyscale-white: #fff;
+  --greyscale-gray-100: #e7e8eb;
+  --greyscale-gray-200: #cfd2d7;
+  --greyscale-gray-300: #b8bbc2;
+  --greyscale-gray-400: #a0a4ad;
+  --greyscale-gray-500: #898e98;
+  --greyscale-gray-600: #727883;
+  --greyscale-gray-700: #5c616e;
+  --greyscale-gray-800: #454b58;
+  --greyscale-gray-900: #2f3542;
+  --feedback-error: #ff4b55;
+  --border-radius: 8px;
+  --font-family: "Inter", sans-serif;
+  --header-family: "Averta Std", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
