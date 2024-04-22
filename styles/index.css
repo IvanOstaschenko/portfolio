@@ -203,6 +203,7 @@ svg * {
   --border-radius: 8px;
   --font-family: "Inter", sans-serif;
   --header-family: "Averta Std", sans-serif;
+  --container-width: 1200px;
 }
 
 /*# sourceMappingURL=index.css.map */
