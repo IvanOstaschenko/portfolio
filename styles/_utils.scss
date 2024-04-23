@@ -1,0 +1,8 @@
+.container{
+  max-width: calc(var(--container-width));
+  margin: auto;
+}
+
+.invisible-element{
+  visibility: hidden;
+}

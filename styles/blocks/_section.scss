@@ -1,0 +1,11 @@
+.section{
+
+  background-size: cover;
+
+  &_bg{
+
+    &_header{
+      background: url("../../image/bgHeader.png") no-repeat;
+    }
+  }
+}

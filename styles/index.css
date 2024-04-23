@@ -202,8 +202,115 @@ svg * {
   --feedback-error: #ff4b55;
   --border-radius: 8px;
   --font-family: "Inter", sans-serif;
-  --header-family: "Averta Std", sans-serif;
+  --second-family: "Averta Std", sans-serif;
   --container-width: 1200px;
+  --section-padding-y: 65px;
+  --transition-duration: 0.2s;
+}
+
+.container {
+  max-width: calc(var(--container-width));
+  margin: auto;
+}
+
+.invisible-element {
+  visibility: hidden;
+}
+
+body {
+  font-size: clamp(16px,1.25vw,18px);
+  background: var(--greyscale-gray-900);
+  color: var(--greyscale-white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.28;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+button,
+textarea,
+input,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+.header {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu-list {
+  align-items: center;
+  column-gap: 24px;
+  display: flex;
+}
+.header__menu-link {
+  display: inline-block;
+  padding: 24px 16px;
+  position: relative;
+}
+@media (hover: hover) {
+  .header__menu-link:hover {
+    color: var(--primary);
+  }
+  .header__menu-link:hover .header__menu-link-text {
+    font-weight: 700;
+  }
+  .header__menu-link:hover::after {
+    width: 100%;
+  }
+}
+@media (hover: none) {
+  .header__menu-link:active {
+    color: var(--primary);
+  }
+  .header__menu-link:active .header__menu-link-text {
+    font-weight: 700;
+  }
+  .header__menu-link:active::after {
+    width: 100%;
+  }
+}
+.header__menu-link::after {
+  background-color: currentColor;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  transition-duration: inherit;
+  translate: -50%;
+  width: 0;
+}
+.header__menu-link-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.section {
+  background-size: cover;
+}
+.section_bg_header {
+  background: url("../../image/bgHeader.png") no-repeat;
 }
 
 /*# sourceMappingURL=index.css.map */
