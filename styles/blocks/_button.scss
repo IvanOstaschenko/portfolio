@@ -1,0 +1,30 @@
+.button{
+  @include flex-center(true);
+
+  border: var(--button-border);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 16px;
+  height: 48px;
+  padding-inline: var(--button-padding-x);
+}
+
+.primary-button{
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: var(--greyscale-white);
+
+  @include hover{
+    background: var(--primary);
+  }
+}
+
+.secondary-button{
+  background: var(--greyscale-gray-900);
+  color: var(--primary);
+
+  @include hover{
+    border-color: var(--primary-dark);
+    color: var(--primary-dark);
+  }
+}

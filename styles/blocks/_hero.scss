@@ -1,0 +1,17 @@
+.hero{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &__profession{
+    color: var(--primary);
+  }
+
+  &__description{
+    margin-top: 16px;
+
+    & p{
+      margin-bottom: 48px;
+    }
+  }
+}

@@ -20,3 +20,30 @@ input,
 svg *{
   transition-duration: var(--transition-duration);
 }
+
+.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family: var(--second-family);
+}
+
+.h1,.h2{
+  font-weight: 900;
+}
+.h3,.h4{
+  font-weight: 700;
+}
+
+.h1{
+  @include fluid-text(40,30);
+}
+
+.h2{
+  @include fluid-text(40,30);
+}
+
+.h3{
+  @include fluid-text(30,26);
+}
+
+.h4{
+  @include fluid-text(20,18);
+}

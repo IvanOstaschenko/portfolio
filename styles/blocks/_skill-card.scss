@@ -1,0 +1,11 @@
+.skill-card{
+  @include flex-center;
+
+  background: var(--greyscale-gray-800);
+  color: var(--greyscale-white);
+  font-size: 16px;
+  height: 140px;
+  width: 112px;
+  row-gap: 9px;
+
+}

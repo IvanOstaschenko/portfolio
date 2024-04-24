@@ -2,10 +2,24 @@
 
   background-size: cover;
 
+  &:first-child{
+    padding-top: calc(var(--section-padding-y) + 68px);
+    padding-bottom: var(--section-padding-y);
+  }
+
+  &:not(:first-child){
+    padding-block: var(--section-padding-y);
+  }
+
   &_bg{
 
     &_header{
-      background: url("../../image/bgHeader.png") no-repeat;
+      background: url("../../image/bgHeader.png") center/cover no-repeat;
     }
+  }
+
+  &__title{
+    align-items: flex-start;
+    display: flex;
   }
 }

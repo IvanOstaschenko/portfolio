@@ -15,14 +15,17 @@
   --greyscale-gray-900: #2f3542;
   --feedback-error: #ff4b55;
 
-  --border-radius: 8px;
+  --border-radius: 4px;
 
   --font-family: "Inter", sans-serif;
   --second-family: "Averta Std", sans-serif;
 
   --container-width: 1200px;
 
-  --section-padding-y: 65px;
+  --section-padding-y: 64px;
 
   --transition-duration: 0.2s;
+
+  --button-padding-x: 20px;
+  --button-border: 1px solid var(--primary);
 }

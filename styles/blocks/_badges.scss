@@ -1,0 +1,15 @@
+.badge{
+  @include flex-center(true);
+
+  border: 1px solid var(--primary-light);
+  color: var(--primary-light);
+  font-size: 12px;
+  font-weight: 700;
+  height: 24px;
+  padding-inline: 8px;
+
+  @include hover{
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+  }
+}
